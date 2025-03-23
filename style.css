@@ -1,0 +1,109 @@
+/* RESET DEFAULT SPACES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLES */
+body {
+    background: url('/62c3567c-9900-435f-8379-60bcdaabe259\ \(1\).png') no-repeat center center fixed; /* Replace with your night nature image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* CONTAINER STYLES */
+#container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark theme */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* INPUT FIELD */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slightly lighter input field */
+    color: #e0e0e0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* BUTTON */
+button {
+    padding: 10px 25px;
+    background-color: #1f1f1f; /* Dark button background */
+    color: #e0e0e0;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333; /* Slightly lighter on hover */
+    transform: scale(1.1);
+}
+
+/* WEATHER DATA */
+.weather-data {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-data h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.weather-data p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
